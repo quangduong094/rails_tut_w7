@@ -1,0 +1,847 @@
+  [1m[36m (13.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (22.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBooks (20160303072508)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "number_of_pages" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160303072508"]]
+  [1m[35m (13.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/books" for 203.162.22.145 at 2016-03-03 07:33:43 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 1639ms (Views: 1619.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 203.162.22.145 at 2016-03-03 07:33:45 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 203.162.22.145 at 2016-03-03 07:33:46 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 203.162.22.145 at 2016-03-03 07:33:46 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 203.162.22.145 at 2016-03-03 07:33:46 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 203.162.22.145 at 2016-03-03 07:33:46 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 203.162.22.145 at 2016-03-03 07:33:46 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 203.162.22.145 at 2016-03-03 07:33:46 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 203.162.22.145 at 2016-03-03 07:33:46 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/books" for 203.162.22.145 at 2016-03-03 07:50:04 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 427ms (Views: 404.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/new" for 203.162.22.145 at 2016-03-03 07:50:07 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.erb (61.4ms)
+  Rendered books/new.html.erb within layouts/application (71.3ms)
+Completed 200 OK in 160ms (Views: 151.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books" for 203.162.22.145 at 2016-03-03 07:50:35 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VkHS217yUeh9gH//FnFgiLA77T3xUSu8pGQFbMydW+W1q1a/JxvztDOYp9e9C6zFvXtSBDR4a3/7QlLOoApD3g==", "book"=>{"title"=>"KBM", "number_of_pages"=>"1"}, "commit"=>"Create Book"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "books" ("title", "number_of_pages", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "KBM"], ["number_of_pages", 1], ["created_at", "2016-03-03 07:50:35.693768"], ["updated_at", "2016-03-03 07:50:35.693768"]]
+  [1m[36m (99.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-sample-lpch1994.c9users.io/books/1
+Completed 302 Found in 116ms (ActiveRecord: 101.5ms)
+
+
+Started GET "/books/1" for 203.162.22.145 at 2016-03-03 07:50:35 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.5ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 81ms (Views: 53.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 06:56:59 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (358.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20160310065148)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160310065148"]]
+  [1m[36m (20.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 06:59:31 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 1606ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     7:   <%= csrf_meta_tags %>
+     8: </head>
+     9: <body>
+    10:   <h3>Hello <%=current_user.email%></h3>
+    11:   <hr>
+    12: 
+    13: <%= yield %>
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__3765929669984772922_18817800'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (362.5ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:00:17 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     7:   <%= csrf_meta_tags %>
+     8: </head>
+     9: <body>
+    10:   <h3>Hello <%= current_user.email %> </h3>
+    11:   <hr>
+    12: 
+    13: <%= yield %>
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__3765929669984772922_70102676802120'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (40.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (149.8ms)
+
+
+Started GET "/users/new" for 203.162.22.145 at 2016-03-10 07:00:44 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (47.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (190.3ms)
+
+
+Started GET "/users/sign_up" for 203.162.22.145 at 2016-03-10 07:01:19 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (7.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (55.6ms)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     7:   <%= csrf_meta_tags %>
+     8: </head>
+     9: <body>
+    10:   <h3>Hello <%= current_user.email %> </h3>
+    11:   <hr>
+    12: 
+    13: <%= yield %>
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__3765929669984772922_70102676802120'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.1ms)
+
+
+Started GET "/users/sign_up" for 203.162.22.145 at 2016-03-10 07:01:37 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (20.2ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/layouts/application.html.erb:11: syntax error, unexpected '<'
+  <hr>
+   ^
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:15: syntax error, unexpected '<', expecting ')'
+</body>
+ ^
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:16: unknown regexp options - htl
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:17: unterminated string meets end of file
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:17: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/layouts/application.html.erb:11: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:15: syntax error, unexpected '<', expecting ')'
+  app/views/layouts/application.html.erb:16: unknown regexp options - htl
+  app/views/layouts/application.html.erb:17: unterminated string meets end of file
+  app/views/layouts/application.html.erb:17: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (122.6ms)
+
+
+Started GET "/users/sign_up" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/books.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/books.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 203.162.22.145 at 2016-03-10 07:01:49 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/users" for 203.162.22.145 at 2016-03-10 07:02:23 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cUqNS20S/C/w0xOfFUhECmZw2jwo8y6nuxKTKWY5sMOE8ATPjxC4/ASPrGusZNYTLctIiIT6h7sb2EI1gGI8ug==", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '123@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "123@gmail.com"], ["encrypted_password", "$2a$10$tXDuMC1xuB9OTEjnINy8oOcE8ikvDmirGZ.82S775JQzklJQ6hJe."], ["created_at", "2016-03-10 07:02:24.017773"], ["updated_at", "2016-03-10 07:02:24.017773"]]
+  [1m[36m (11.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-03-10 07:02:24.034101"], ["current_sign_in_at", "2016-03-10 07:02:24.034101"], ["last_sign_in_ip", "203.162.22.145"], ["current_sign_in_ip", "203.162.22.145"], ["sign_in_count", 1], ["updated_at", "2016-03-10 07:02:24.035093"], ["id", 1]]
+  [1m[35m (25.0ms)[0m  commit transaction
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 269ms (ActiveRecord: 38.9ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:02:24 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:02:47 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:05:47 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+     8: </head>
+     9: <body>
+    10:   <h3>Hello <%= current_user.email %> </h3>
+    11:   <%= link_to "Log out",destroy_user_session_path,method::delete %>
+    12:   <hr>
+    13: 
+    14: <%= yield %>
+  app/views/layouts/application.html.erb:11:in `method'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__3765929669984772922_70102678764040'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (116.9ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:06:54 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 127ms (Views: 125.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:08:48 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:08:50 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 203.162.22.145 at 2016-03-10 07:08:51 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CXQuNJFJeG4T61K3IieY73/tlKGayYtBYVHCELT/LR38zqewc0s8vee37UObCwr2NFYGFTbAIl3BmxMMUqShZA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 14ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:08:51 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:08:55 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (7.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 80ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:09:01 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vF4o4AayxIRqalbfSL8VWPgnpSyTqIMK+Umt30nzAdLRbhjGBh0gvC7G92vNlInPKlYpkuj5H0dzIyQi163hNw==", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "123@gmail.com"]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2016-03-10 07:09:01.230844"], ["sign_in_count", 2], ["updated_at", "2016-03-10 07:09:01.233502"], ["id", 1]]
+  [1m[35m (34.5ms)[0m  commit transaction
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 131ms (ActiveRecord: 35.8ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:09:01 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 203.162.22.145 at 2016-03-10 07:09:26 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xkZDuA8k1RyT53Wl8P+nGu69Us8SUjgyDfZiPD08SPS2Yx+4B6ilJEhaLKdCbh4k7NCAek+NM36klOgMmnU50w=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:09:26 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:09:28 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 203.162.22.145 at 2016-03-10 07:09:32 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:09:34 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 58ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:09:40 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kQiimoemFMX+KRlYqyCAVT0sRSqizqOhw+dLRCFe3hyhnUe/LXgmL9SWQdRoKwe7ekZcs9EduzhYPhdWX1FCSQ==", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "123@gmail.com"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-03-10 07:09:01.230844"], ["current_sign_in_at", "2016-03-10 07:09:40.976321"], ["sign_in_count", 3], ["updated_at", "2016-03-10 07:09:40.978056"], ["id", 1]]
+  [1m[35m (19.7ms)[0m  commit transaction
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 190ms (ActiveRecord: 20.7ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:09:41 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:11:16 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 66ms (Views: 61.6ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/users/sign_out" for 203.162.22.145 at 2016-03-10 07:11:34 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ELaMkABV8pmeWid9edDvgptoBXIR2CxBXtjNjNerL/E6/o4govqCSBnjEhFQtm4/MRans7SVbxCq8HetoWEqjw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 11ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:11:35 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:11:37 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (10.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 75ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:11:42 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZfEQn45m5Le4qMkIoHpKFfZdC48NAcH+y6dJOap2/i7OPp8SguYXEe36Zkfozi4vHyuHy3hpAnKOoXBYd/66yw==", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "123@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-03-10 07:09:40.976321"], ["current_sign_in_at", "2016-03-10 07:11:42.593714"], ["sign_in_count", 4], ["updated_at", "2016-03-10 07:11:42.595317"], ["id", 1]]
+  [1m[36m (14.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 114ms (ActiveRecord: 15.9ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:11:43 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNameAndAge (20160310072553)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "users" ADD "name" varchar[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "age" integer
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_name" ON "users" ("name")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160310072553"]]
+  [1m[35m (36.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_name' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:49:23 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (6.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 489ms (Views: 461.0ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/users/sign_out" for 203.162.22.145 at 2016-03-10 07:49:26 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+RwiIJEu+4rNMyCzSOk0UBA70nvXMqo9KqLRXJf5Wd+diWM+MBH+OpAU/SwQaZsilCMVzoRBIYDLQsIQAJaYqw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 27ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:49:26 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:49:27 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (82.7ms)
+Completed 200 OK in 120ms (Views: 117.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:49:57 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:49:59 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 91ms (Views: 73.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up" for 203.162.22.145 at 2016-03-10 07:50:02 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 81ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 203.162.22.145 at 2016-03-10 07:50:22 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14k3W0YVTe+9se8ES+x6Fu9gmkfLgAoo50C/Yuav1zE+4BVj3aibZsD+d/fM4a6grUAAjlskG4vJia9iv64+lQ==", "user"=>{"email"=>"123@gmail.com", "name"=>"", "age"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = '123@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 134ms (Views: 74.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 203.162.22.145 at 2016-03-10 07:51:03 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NwY8IoEi5tFAhGhiKKkfH+LALm9fW6L9YlB0zCdYXprebx4aGp8wWD3L8JGvpMupoOC0ps//s15MmWTMflm3Pg==", "user"=>{"email"=>"123@gmail.com", "name"=>"aaa", "age"=>"7", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '123@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 346ms (Views: 74.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:51:31 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 83ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 203.162.22.145 at 2016-03-10 07:51:36 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OD+6TKuTgbTv4QAIpvYy6hD+gEK8G6K+oOPX5n9myeTRVph0MC5XPZKumPsh++ZcUt4aiyy/sx2OKsfmJmcgQA==", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "123@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-03-10 07:11:42.593714"], ["current_sign_in_at", "2016-03-10 07:51:36.434199"], ["sign_in_count", 5], ["updated_at", "2016-03-10 07:51:36.435486"], ["id", 1]]
+  [1m[35m (12.5ms)[0m  commit transaction
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 117ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:51:36 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 50ms (Views: 45.4ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/users/sign_out" for 203.162.22.145 at 2016-03-10 07:52:40 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1mp4uWu/SsiZq4D1r1VAzMZv+V/e70XtfrL0SczfSuUeIvg8d+zAYKyc7ORKpXiE9FVz1/fN7tvxnTGqDLo2AQ=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 85ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:52:40 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 203.162.22.145 at 2016-03-10 07:52:58 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 203.162.22.145 at 2016-03-10 07:53:19 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kST5WjHGwVsmc65KCfYBalxzmW6CRP1zUoiKB6mdnCOXCmu3KISWZw0QMSIIOCyUul6ohjiijAuOoIb2A5vUXQ==", "user"=>{"email"=>"1234@gmail.com", "name"=>"hieu", "age"=>"23", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = '1234@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 152ms (Views: 54.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 203.162.22.145 at 2016-03-10 07:53:30 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sJtN1JmqHAKFa6wLPm7F2jHFcdhw7Uvf6qIZz8slB5+2td85gOhLPq4IM2M/oOgk1+hAMMoLOqc2ihU+YSNP4Q==", "user"=>{"email"=>"1234@gmail.com", "name"=>"hieu", "age"=>"23", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '1234@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "1234@gmail.com"], ["encrypted_password", "$2a$10$YBaoilJ9JCjBDSNfX5TuG.Ye/oZUprB9DjSviXX3mvFMPePYhI3iC"], ["name", "hieu"], ["age", 23], ["created_at", "2016-03-10 07:53:30.355148"], ["updated_at", "2016-03-10 07:53:30.355148"]]
+  [1m[36m (24.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-03-10 07:53:30.383527"], ["current_sign_in_at", "2016-03-10 07:53:30.383527"], ["last_sign_in_ip", "203.162.22.145"], ["current_sign_in_ip", "203.162.22.145"], ["sign_in_count", 1], ["updated_at", "2016-03-10 07:53:30.385110"], ["id", 2]]
+  [1m[35m (19.5ms)[0m  commit transaction
+Redirected to https://rails-sample-lpch1994.c9users.io/
+Completed 302 Found in 152ms (ActiveRecord: 45.7ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:53:30 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 203.162.22.145 at 2016-03-10 07:54:19 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 71ms (Views: 67.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 203.162.22.145 at 2016-03-10 07:59:02 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (8.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 559ms (Views: 523.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/edit" for 203.162.22.145 at 2016-03-10 07:59:10 +0000
+Cannot render console from 203.162.22.145! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (61.3ms)
+Completed 200 OK in 120ms (Views: 114.9ms | ActiveRecord: 0.3ms)
